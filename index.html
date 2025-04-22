@@ -15,22 +15,33 @@
 
     header {
       display: flex;
-      justify-content: space-between;
+      flex-direction: column;
       align-items: center;
-      padding: 1rem 2rem;
+      justify-content: center;
+      padding: 1rem;
       background-color: #121212;
+      text-align: center;
     }
 
-    header img {
-      height: 40px;
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+      color: #39ff14;
+      margin-bottom: 0.5rem;
+    }
+
+    nav {
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
     }
 
     nav a {
-      margin-left: 20px;
       color: #fff;
       text-decoration: none;
       font-weight: 600;
       transition: 0.3s;
+      font-size: 1.1rem;
     }
 
     nav a:hover {
@@ -39,14 +50,15 @@
 
     .hero {
       background: linear-gradient(135deg, #0f0f0f, #1c1c1c);
-      padding: 4rem 2rem;
+      padding: 3rem 1rem 2rem;
       text-align: center;
     }
 
     .hero h1 {
-      font-size: 2rem;
+      font-size: 1.6rem;
       color: #fff;
       margin-bottom: 1rem;
+      line-height: 1.4;
     }
 
     .hero .highlight {
@@ -54,21 +66,23 @@
     }
 
     .hero p {
-      margin-top: 1rem;
-      font-size: 1.2rem;
+      font-size: 1rem;
       color: #ccc;
+      margin-bottom: 2rem;
     }
 
     .btn-whatsapp {
       display: inline-block;
-      margin-top: 2rem;
       background-color: #39ff14;
       color: #000;
-      padding: 0.75rem 1.5rem;
-      border-radius: 10px;
+      padding: 1rem 2rem;
+      border-radius: 12px;
       font-weight: bold;
       text-decoration: none;
+      font-size: 1.1rem;
       transition: transform 0.3s;
+      width: 100%;
+      max-width: 300px;
     }
 
     .btn-whatsapp:hover {
@@ -76,91 +90,47 @@
     }
 
     section {
-      padding: 3rem 2rem;
-      max-width: 800px;
-      margin: auto;
+      padding: 2rem 1rem;
+      text-align: center;
     }
 
     .cta-box {
       background-color: #1a1a1a;
       border: 1px solid #39ff14;
-      border-radius: 12px;
-      padding: 2rem;
-      text-align: center;
+      border-radius: 16px;
+      padding: 2rem 1rem;
       margin-top: 2rem;
+    }
+
+    .cta-box h2 {
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+    }
+
+    .cta-box p {
+      font-size: 1rem;
+      color: #ccc;
+      margin-bottom: 1.5rem;
     }
 
     footer {
       background-color: #121212;
       text-align: center;
       padding: 1rem;
-      font-size: 0.9rem;
+      font-size: 0.85rem;
       color: #777;
     }
 
-    /* Responsividade */
-    @media (max-width: 768px) {
-      header {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 1rem;
-      }
-
-      nav {
-        margin-top: 1rem;
-      }
-
-      nav a {
-        margin-left: 0;
-        margin-top: 10px;
-        font-size: 1rem;
-      }
-
-      .hero h1 {
-        font-size: 1.5rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
-
-      .btn-whatsapp {
-        width: 100%;
-        padding: 1rem;
-        text-align: center;
-        font-size: 1.2rem;
-      }
-
-      .cta-box {
-        padding: 1.5rem;
-      }
-
-      footer {
-        font-size: 0.8rem;
-        padding: 1rem;
-      }
-    }
-
-    /* Para telas muito pequenas (exemplo: smartphones pequenos) */
-    @media (max-width: 480px) {
-      .hero h1 {
-        font-size: 1.2rem;
-      }
-
-      .hero p {
-        font-size: 0.9rem;
-      }
-
-      .btn-whatsapp {
-        font-size: 1rem;
-      }
+    /* Evitar que elementos fiquem muito largos em celulares estreitos */
+    * {
+      box-sizing: border-box;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="c:\Users\aneph\Downloads\af7a00c0-373d-4ef2-8725-f8d14394d540-Photoroom.png" alt="Logo BitenUp" />
+    <div class="logo">BitenUp</div>
     <nav>
       <a href="index.html">Início</a>
       <a href="serviços.html">Serviços</a>

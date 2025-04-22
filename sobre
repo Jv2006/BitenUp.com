@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BitenUp - Sobre</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header>
+    <img src="img/logo.png" alt="Logo BitenUp" />
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="serviços.html">Serviços</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </header>
+
+  <section>
+    <h1>Quem Somos</h1>
+    <p>Somos uma agência focada em resultados. Movidos por dados, criatividade e tecnologia, ajudamos marcas a se destacarem no ambiente digital.</p>
+
+    <div class="service-box">
+      <h3>Nossa Missão</h3>
+      <p>Conectar negócios às melhores oportunidades de crescimento através do marketing digital.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Visão</h3>
+      <p>Ser referência nacional em performance digital e inovação.</p>
+    </div>
+
+    <div class="service-box">
+      <h3>Valores</h3>
+      <p>Transparência, Inovação, Performance, Criatividade e Resultados.</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 BitenUp. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
